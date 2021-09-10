@@ -1,1 +1,8 @@
 Gene, Arbre phylogeographique, Position ASM, Bootstrap moyen, RF normalise
+S,Humidité_relative_à_2m_%_newick,2200_2500,6.666666666666667,50.0
+S,T_min_à_2m_C_newick,2200_2500,6.666666666666667,50.0
+N,T_min_à_2m_C_newick,0_300,9.333333333333334,53.333333333333336
+N,Humidité_relative_à_2m_%_newick,700_1000,9.333333333333334,53.333333333333336
+N,T_min_à_2m_C_newick,700_1000,9.333333333333334,53.333333333333336
+N,T_min_à_2m_C_newick,500_600,10.0,53.333333333333336
+S,T_min_à_2m_C_newick,2700_2800,10.0,100

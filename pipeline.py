@@ -2,6 +2,7 @@ from posix import listdir
 import subprocess
 import os
 import re
+import sys
 import pandas as pd
 from csv import writer
 
@@ -205,7 +206,7 @@ def displayGenesOption(window_size, step_size, bootstrap_threshold, rf_threshold
             break
     
 
-def menu():
+def main():
     # try:
     names = menuGetTrees()
     bootstrap_threshold = getBootstrapThreshold()
@@ -270,6 +271,7 @@ def alignSequences(gene):
 def createBoostrap():
     os.system("./exec/seqboot < input/bootstrap_input.txt")
     subprocess.call(["mv", "outfile", "infile"])
+    sys.stdout.flush()
 
 
 def getDissimilaritiesMatrix(nom_fichier_csv,column_with_specimen_name, column_to_search, outfile_name):
@@ -318,17 +320,20 @@ def getDissimilaritiesMatrix(nom_fichier_csv,column_with_specimen_name, column_t
 def createDistanceMatrix():
     os.system("./exec/dnadist < input/dnadist_input.txt")
     subprocess.call(["mv", "outfile", "infile"])
+    sys.stdout.flush()
 
 def createUnrootedTree():
     os.system("./exec/neighbor < input/neighbor_input.txt")
     subprocess.call(["rm", "infile", "outfile"])
     subprocess.call(["mv", "outtree", "intree"])
+    sys.stdout.flush()
 
 
 def createConsensusTree():
     os.system("./exec/consense < input/input.txt")
     # subprocess.call(["mv", "outtree", file])
     subprocess.call(["rm", "intree", "outfile"])
+    sys.stdout.flush()
 
 
 def calculateAverageBootstrap():
@@ -438,4 +443,4 @@ def cleanUp(file, tree):
     subprocess.call(["rm", "output/windows/"+reduced_file])
 
 if __name__ == '__main__':
-    menu()
+    main()
