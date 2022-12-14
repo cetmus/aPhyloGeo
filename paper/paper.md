@@ -1,30 +1,23 @@
 ---
-title: 'Gala: A Python package for galactic dynamics'
+title: 'aPhyloGeo: Multi-platform application for analyze phylogenetic trees with climatic parameters'
 tags:
-  - Python
-  - astronomy
-  - dynamics
-  - galactic dynamics
-  - milky way
+  - bioinformatics
+  - phylogeny
+  - supertree
+  - consensus tree
+  - classification
+  - clustering
+  - Robinson and Foulds distance
 authors:
-  - name: Adrian M. Price-Whelan
-    orcid: 0000-0000-0000-0000
-    equal-contrib: true
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author Without ORCID
-    equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
-    affiliation: 2
-  - name: Author with no affiliation
-    corresponding: true # (This is how to denote the corresponding author)
-    affiliation: 3
+  - name: Nadia Tahiri
+    affiliation: 1
+    orcid: 0000-0002-1818-208X
+    corresponding: true
+    email: Nadia.Tahiri@USherbrooke.ca
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University, USA
-   index: 1
- - name: Institution Name, Country
-   index: 2
- - name: Independent Researcher, Country
-   index: 3
-date: 13 August 2017
+  - name: département d’Informatique, Université de Sherbrooke, 2500 Boulevard de l’Université, Sherbrooke, Québec J1K 2R1, Canada
+    index: 1
+date: 14 December 2022
 bibliography: paper.bib
 
 # Optional fields if submitting to a AAS journal too, see this blog post:
@@ -68,6 +61,8 @@ scientific explorations of forthcoming data releases from the *Gaia* mission
 [@gaia] by students and experts alike.
 
 # Mathematics
+
+![Figure 1. The workflow of the algorithm. The operations within this workflow include several blocks. The blocks are highlighted by three different colors.](../img/Fig_1.png)
 
 Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
 
