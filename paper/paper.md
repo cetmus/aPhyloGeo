@@ -33,12 +33,15 @@ A cross-platform application for phylogenetic tree analysis with climate paramet
 
 Climate change and other anthropogenic variables have a major impact on biodiversity and population dynamics. In order to better explain the mechanisms underlying these perturbed ecosystem states, biologists have used phylogeographic approaches. These approaches attempt to determine the relationship between the genetic structure of the populations studied and their geographical distribution by considering their present or past geoclimatic history.
 
+In this study, we are particularly interested in the development of bioinformatics tools for the phylogeographic analysis of viruses [1] and endemic or invasive species. Knowing the urgency of the current climate situation (COP27 - Climate Change and COP15 - Convention on Biological Diversity) and expected in the future, it is therefore essential to develop tools respecting bioinformatics software development standards in order to characterize genetic diversity and phenotypic traits according to environmental conditions.
+
 
 # Mathematics
 
 ![The workflow of the algorithm. The operations within this workflow include several blocks.](../img/Fig_1.png)
 
 The blocks are highlighted by three different colors.
+
 * The first block (the light blue color) is responsible for creating the trees based on the climate data - performs the function of input parameter validation (see YAML file).
 * The second block (the dark yellow color) is responsible for creating the trees based on the genetic data - performs the function of input parameter validation (see YAML file).
 * The third block (the light green color) allows the comparaison between the phylogenetic trees (i.e., with genetic data) and the climatic trees - denoted phylogeography step.
