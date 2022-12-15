@@ -39,9 +39,9 @@ Climate change and other anthropogenic variables have a major impact on biodiver
 ![The workflow of the algorithm. The operations within this workflow include several blocks.](../img/Fig_1.png)
 
 The blocks are highlighted by three different colors.
-- The first block (the light blue color) is responsible for creating the trees based on the climate data - performs the function of input parameter validation (see YAML file).
-- The second block (the dark yellow color) is responsible for creating the trees based on the genetic data - performs the function of input parameter validation (see YAML file).
-- The third block (the light green color) allows the comparaison between the phylogenetic trees (i.e., with genetic data) and the climatic trees - denoted phylogeography step.
+* The first block (the light blue color) is responsible for creating the trees based on the climate data - performs the function of input parameter validation (see YAML file).
+* The second block (the dark yellow color) is responsible for creating the trees based on the genetic data - performs the function of input parameter validation (see YAML file).
+* The third block (the light green color) allows the comparaison between the phylogenetic trees (i.e., with genetic data) and the climatic trees - denoted phylogeography step.
 
 This is the most important block and the basis of this study, through the results of which the user receives the output data with the necessary calculations.
 
