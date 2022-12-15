@@ -59,7 +59,7 @@ This is the most important block and the basis of this study, through the result
 Moreover, our approach is optimal since it is elastic and adapts to any computer by using parallelism and available GPUs/CPUs according to the resource usage per unit of computation (i.e., to realize the processing of a single genetic window - see the worflow below).
 **Multiprocessing**: Allows multiple windows to be analyzed simultaneously (recommended for large datasets)
 
-In this work, we applied software packages of the following versions: [Biopython](https://biopython.org/) version 1.79 (BSD 3-Clause License), [Bio](https://pandas.pydata.org/) version 1.5.2 (New BSD License), and [numpy](https://numpy.org/) version 1.21.6 (BSD 3-clauses).
+In this work, we applied software packages of the following versions: [Biopython](https://biopython.org/) version 1.79 (BSD 3-Clause License), [Bio](https://pandas.pydata.org/) version 1.5.2 (New BSD License), and [numpy](https://numpy.org/) version 1.21.6 (BSD 3-Clause License).
 
 # Conclusion
 The `aPhyloGeo` pipeline provides a suite of phylogeographic analyses for different datasets (genetic and climatic), all in one package. This allows for a variety of uses without having to download multiple tools and programs, making the pipeline easy to use and reproducible. Additional avenues may be added to `aPhyloGeo` in the future, such as integration of the Nextflow framework, clustering based on multiple sequence alignments similarity, an efficient alignment method, and new metrics (e.g., Robinson and Foulds distance, Quartet metric, and bipartition) will be added as potential choices, to help users select the best choice for their data by evaluating the genetic diversity in their dataset.
