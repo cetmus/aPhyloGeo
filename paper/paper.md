@@ -35,8 +35,9 @@ Climate change and other anthropogenic variables have a major impact on biodiver
 
 In this study, we are particularly interested in the development of bioinformatics tools for the phylogeographic analysis of viruses [1] and endemic or invasive species. Knowing the urgency of the current climate situation (COP27 - Climate Change and COP15 - Convention on Biological Diversity) and expected in the future, it is therefore essential to develop tools respecting bioinformatics software development standards in order to characterize genetic diversity and phenotypic traits according to environmental conditions.
 
+# State of the field
 
-# Mathematics
+# Pipeline
 
 ![The workflow of the algorithm. The operations within this workflow include several blocks.](../img/Fig_1.png)
 
@@ -53,6 +54,8 @@ Moreover, our approach is optimal since it is elastic and adapts to any computer
 
 In this work, we applied software packages of the following versions: [Biopython](https://biopython.org/) version 1.79 (BSD 3-Clause License).
 
+
+
 Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
 
 Double dollars make self-standing equations:
@@ -68,32 +71,13 @@ You can also use plain \LaTeX for equations
 \end{equation}
 and refer to \autoref{eq:fourier} from text.
 
-# Citations
 
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
 
-If you want to cite a software repository URL (e.g. something on GitHub without a preferred
-citation) then you can do it with the example BibTeX entry below for @fidgit.
-
-For a quick reference, the following citation commands can be used:
-- `@author:2001`  ->  "Author et al. (2001)"
-- `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
-
-# Figures
-
-Figures can be included like this:
-![Caption for example figure.\label{fig:example}](figure.png)
-and referenced from text using \autoref{fig:example}.
-
-Figure sizes can be customized by adding an optional second parameter:
-![Caption for example figure.](figure.png){ width=20% }
+# Conclusion
+The ALPPACA pipeline provides a suite of phylogenetic analyses for different scenarios, all in one package. This enables a variety of uses without having to download several tools and programs, and the Nextflow framework allows for user-friendly and reproducible use of the pipeline. Additional tracks may be added to ALPPACA in the future, such as clustering based on core/whole genome multi locus sequence typing, or additions to existing tracks, such as recombination detection in the core gene analysis. Clustering analysis using FastANI (https://github.com/ParBLiSS/FastANI) will be added as a separate track, to assist users in selecting the correct track by evaluating genetic diversity in their dataset.
 
 # Acknowledgements
 
-We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
-Oh, and support from Kathryn Johnston during the genesis of this project.
+This work was supported by the Natural Sciences and Engineering Research Council of Canada, the University of Sherbrooke grant, and the Centre de recherche en écologie de l'UdeS (CREUS). The authors would like to thank the Department of Computer Science, University of Sherbrooke, Quebec, Canada for providing the necessary resources to conduct this research. The computations were performed on resources provided by Compute Canada and Compute Quebec - the National and Provincial Infrastructure for High Performance Computing and Data Storage.
 
 # References
