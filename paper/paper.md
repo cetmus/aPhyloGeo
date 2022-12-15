@@ -2,12 +2,11 @@
 title: 'aPhyloGeo: Multi-platform application for analyze phylogenetic trees with climatic parameters'
 tags:
   - bioinformatics
+  - consensus
+  - least Square distance
+  - multiple sequence alignment
   - phylogeny
-  - supertree
-  - consensus tree
-  - classification
-  - clustering
-  - Robinson and Foulds distance
+  - phylogeography
 authors:
   - name: Nadia Tahiri
     affiliation: 1
@@ -28,15 +27,7 @@ aas-journal: Astrophysical Journal <- The name of the AAS journal.
 
 # Summary
 
-The forces on stars, galaxies, and dark matter under external gravitational
-fields lead to the dynamical evolution of structures in the universe. The orbits
-of these bodies are therefore key to understanding the formation, history, and
-future state of galaxies. The field of "galactic dynamics," which aims to model
-the gravitating components of galaxies to study their structure and evolution,
-is now well-established, commonly taught, and frequently used in astronomy.
-Aside from toy problems and demonstrations, the majority of problems require
-efficient numerical tools, many of which require the same base code (e.g., for
-performing numerical orbit integration).
+A cross-platform application for phylogenetic tree analysis with climate parameters (`aPhyloGeo`) is a pipeline for performing phylogenetic analyses from genetic and climate data. The pipeline provides a suite of analyses adapted to different scenarios, designed to allow the analysis of data sets represented by three different levels: 1) genetic, 2) climatic, and 3) biogeography correlation, all in one package. These levels of similarity (assessed by least squares distance) influence the assumptions used to consider a correlation between the genetics of a species and its habitat during the reconstruction of the multiple alignment required for phylogenetic inference. By selecting an appropriate gene list for the available data defined on a set of species to explain the adaptation of the species according to the Darwinian hypothesis, the user can be confident that these assumptions are taken into account in `aPhyloGeo`.
 
 # Statement of need
 
@@ -62,8 +53,13 @@ scientific explorations of forthcoming data releases from the *Gaia* mission
 
 # Mathematics
 
-![Figure 1. The workflow of the algorithm. The operations within this workflow include several blocks. The blocks are highlighted by three different colors.](../img/Fig_1.png)
+![The workflow of the algorithm. The operations within this workflow include several blocks.](../img/Fig_1.png)
 
+The blocks are highlighted by three different colors.
+- The first block (the light blue color) is responsible for creating the trees based on the climate data - performs the function of input parameter validation (see YAML file).
+- The second block (the dark yellow color) is responsible for creating the trees based on the genetic data - performs the function of input parameter validation (see YAML file).
+- The third block (the light green color) allows the comparaison between the phylogenetic trees (i.e., with genetic data) and the climatic trees - denoted phylogeography step.
+- 
 Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
 
 Double dollars make self-standing equations:
