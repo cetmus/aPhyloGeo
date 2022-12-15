@@ -27,7 +27,7 @@ aas-journal: Astrophysical Journal <- The name of the AAS journal.
 
 # Summary
 
-A cross-platform application for phylogenetic tree analysis with climate parameters (`aPhyloGeo`) is a pipeline for performing phylogenetic analyses from genetic and climate data. The pipeline provides a suite of analyses adapted to different scenarios, designed to allow the analysis of data sets represented by three different levels: 1) genetic, 2) climatic, and 3) biogeography correlation, all in one package. These levels of similarity (assessed by least squares distance) influence the assumptions used to consider a correlation between the genetics of a species and its habitat during the reconstruction of the multiple alignment required for phylogenetic inference. By selecting an appropriate gene list for the available data defined on a set of species to explain the adaptation of the species according to the Darwinian hypothesis, the user can be confident that these assumptions are taken into account in `aPhyloGeo`.
+A cross-platform application for phylogenetic tree analysis with climate parameters (`aPhyloGeo`) is a pipeline for performing phylogenetic analyses from genetic and climate data. The pipeline provides a suite of analyses adapted to different scenarios, designed to allow the analysis of data sets represented by three different levels: 1) genetic, 2) climatic, and 3) biogeography correlation, all in one package. These levels of similarity (assessed by least squares distance in \autoref{eq:ls}) influence the assumptions used to consider a correlation between the genetics of a species and its habitat during the reconstruction of the multiple alignment required for phylogenetic inference. By selecting an appropriate gene list for the available data defined on a set of species to explain the adaptation of the species according to the Darwinian hypothesis, the user can be confident that these assumptions are taken into account in `aPhyloGeo`.
 
 # Statement of need
 
@@ -47,7 +47,12 @@ The blocks are highlighted by three different colors.
 
 * The first block (the light blue color) is responsible for creating the trees based on the climate data - performs the function of input parameter validation (see YAML file).
 * The second block (the dark yellow color) is responsible for creating the trees based on the genetic data - performs the function of input parameter validation (see YAML file).
-* The third block (the light green color) allows the comparaison between the phylogenetic trees (i.e., with genetic data) and the climatic trees - denoted phylogeography step.
+* The third block (the light green color) allows the comparaison between the phylogenetic trees (i.e., with genetic data) and the climatic trees - denoted phylogeography step using Least Square distance (see Equation \autoref{eq:ls}).
+
+\begin{equation}\label{eq:ls}
+ls(T_1, T_2) = \sum_{1 \le i \le j \le n} \lvert \delta(i,j) - \xi(i,j) \rvert
+\end{equation}
+where $T_1$ is the phylogenetic tree 1, $T_2$ is the phylogenetic tree 2, $i$ and $j$ are two species, $\delta(i,j)$ is the distance between specie $i$ and specie $j$ in $T_1$, $\xi(i,j)$ is the distance between specie $i$ and specie $j$ in $T_2$, and $n$ is the total number of species.
 
 This is the most important block and the basis of this study, through the results of which the user receives the output data with the necessary calculations.
 
@@ -55,25 +60,6 @@ Moreover, our approach is optimal since it is elastic and adapts to any computer
 **Multiprocessing**: Allows multiple windows to be analyzed simultaneously (recommended for large datasets)
 
 In this work, we applied software packages of the following versions: [Biopython](https://biopython.org/) version 1.79 (BSD 3-Clause License), [Bio](https://pandas.pydata.org/) version 1.5.2 (New BSD License), and [numpy](https://numpy.org/) version 1.21.6 (BSD 3-clauses).
-
-
-
-Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
-
-Double dollars make self-standing equations:
-
-$$\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.$$
-
-You can also use plain \LaTeX for equations
-\begin{equation}\label{eq:fourier}
-\hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
-\end{equation}
-and refer to \autoref{eq:fourier} from text.
-
-
 
 # Conclusion
 The `aPhyloGeo` pipeline provides a suite of phylogeographic analyses for different datasets (genetic and climatic), all in one package. This allows for a variety of uses without having to download multiple tools and programs, making the pipeline easy to use and reproducible. Additional avenues may be added to `aPhyloGeo` in the future, such as integration of the Nextflow framework, clustering based on multiple sequence alignments similarity, an efficient alignment method, and new metrics (e.g., Robinson and Foulds distance, Quartet metric, and bipartition) will be added as potential choices, to help users select the best choice for their data by evaluating the genetic diversity in their dataset.
