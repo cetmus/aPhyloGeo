@@ -39,6 +39,8 @@ In this study, we are particularly interested in the development of bioinformati
 
 # Pipeline
 
+The `aPhyloGeo` pipeline is written in python3.9, and the code and documentation are publicly available on GitHub  (https://github.com/tahiri-lab/aPhyloGeo). The user has the option of running the pipeline using different cparameterss, such as docker, bootstrap threshold, or least square distance threshold. 
+
 ![The workflow of the algorithm. The operations within this workflow include several blocks.](../img/Fig_1.png)
 
 The blocks are highlighted by three different colors.
@@ -74,7 +76,7 @@ and refer to \autoref{eq:fourier} from text.
 
 
 # Conclusion
-The ALPPACA pipeline provides a suite of phylogenetic analyses for different scenarios, all in one package. This enables a variety of uses without having to download several tools and programs, and the Nextflow framework allows for user-friendly and reproducible use of the pipeline. Additional tracks may be added to ALPPACA in the future, such as clustering based on core/whole genome multi locus sequence typing, or additions to existing tracks, such as recombination detection in the core gene analysis. Clustering analysis using FastANI (https://github.com/ParBLiSS/FastANI) will be added as a separate track, to assist users in selecting the correct track by evaluating genetic diversity in their dataset.
+The `aPhyloGeo` pipeline provides a suite of phylogeographic analyses for different datasets (genetic and climatic), all in one package. This allows for a variety of uses without having to download multiple tools and programs, making the pipeline easy to use and reproducible. Additional avenues may be added to `aPhyloGeo` in the future, such as integration of the Nextflow framework, clustering based on multiple sequence alignments similarity, an efficient alignment method, and new metrics (e.g., Robinson and Foulds distance, Quartet metric, and bipartition) will be added as potential choices, to help users select the best choice for their data by evaluating the genetic diversity in their dataset.
 
 # Acknowledgements
 
