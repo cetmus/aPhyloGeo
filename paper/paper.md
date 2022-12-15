@@ -47,7 +47,7 @@ The blocks are highlighted by three different colors.
 
 * The first block (the light blue color) is responsible for creating the trees based on the climate data - performs the function of input parameter validation (see YAML file).
 * The second block (the dark yellow color) is responsible for creating the trees based on the genetic data - performs the function of input parameter validation (see YAML file).
-* The third block (the light green color) allows the comparaison between the phylogenetic trees (i.e., with genetic data) and the climatic trees - denoted phylogeography step using Least Square distance (see Equation \autoref{eq:ls}).
+* The third block (the light green color) allows the comparaison between the phylogenetic trees (i.e., with genetic data) and the climatic trees - denoted phylogeography step using Least Square distance (see \autoref{eq:ls}).
 
 \begin{equation}\label{eq:ls}
 ls(T_1, T_2) = \sum_{1 \le i \le j \le n} \lvert \delta(i,j) - \xi(i,j) \rvert
