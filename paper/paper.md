@@ -39,9 +39,9 @@ In this study, we are particularly interested in the development of bioinformati
 
 # Pipeline
 
-The `aPhyloGeo` pipeline is written in python3.9, and the code and documentation are publicly available on GitHub  (https://github.com/tahiri-lab/aPhyloGeo). The user has the option of running the pipeline using different cparameterss, such as docker, bootstrap threshold, or least square distance threshold. 
+The `aPhyloGeo` pipeline (\autoref{fig:figure1}) is written in python3.9, and the code and documentation are publicly available on GitHub  (https://github.com/tahiri-lab/aPhyloGeo). The user has the option of running the pipeline using different cparameterss, such as docker, bootstrap threshold, or least square distance threshold. 
 
-![The workflow of the algorithm. The operations within this workflow include several blocks.](../img/Fig_1.png)
+![The workflow of the algorithm. The operations within this workflow include several blocks.\label{fig:figure1}](../img/Fig_1.png)
 
 The blocks are highlighted by three different colors.
 
