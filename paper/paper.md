@@ -78,6 +78,6 @@ The ALPPACA pipeline provides a suite of phylogenetic analyses for different sce
 
 # Acknowledgements
 
-This work was supported by the Natural Sciences and Engineering Research Council of Canada, the University of Sherbrooke grant, and the Centre de recherche en écologie de l'UdeS (CREUS). The authors would like to thank the Department of Computer Science, University of Sherbrooke, Quebec, Canada for providing the necessary resources to conduct this research. The computations were performed on resources provided by Compute Canada and Compute Quebec - the National and Provincial Infrastructure for High Performance Computing and Data Storage.
+This work was supported by the Natural Sciences and Engineering Research Council of Canada, the University of Sherbrooke grant, and the Centre de recherche en écologie de l'UdeS (CREUS). The author would like to thank the Department of Computer Science, University of Sherbrooke, Quebec, Canada for providing the necessary resources to conduct this research. The computations were performed on resources provided by Compute Canada and Compute Quebec - the National and Provincial Infrastructure for High Performance Computing and Data Storage. The author would like to thank the students of the Université du Québec à Montréal for their great contribution to the development of the software.
 
 # References
